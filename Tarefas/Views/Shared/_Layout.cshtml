@@ -9,23 +9,19 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-header">
-            @Html.ActionLink("Início", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-        </div>
-    </div>
-    <div class="card-header">
-        <span>@ViewBag.Pagina</span>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+        <a href="/Home/Index"><img style="width: 25%;" src="~/Imagens/Brook-icon.png" /></a>
+        <h5 style="color:#6700ff; margin: auto">@ViewBag.Pagina</h5>
     </div>
     <div class="container body-content">
         @RenderBody()
     </div>
 
-    <div class="card-footer">
-        <footer class="blockquote-footer text-center">
-            <p>&copy; @DateTime.Now.Year - Todos os direitos reservados</p>
-        </footer>
-    </div>
+    <div style="display:none" class="load"> <img src="~/Imagens/load.gif" /></div>
+
+    <footer class="blockquote-footer text-center">
+        <p>&copy; @DateTime.Now.Year Brooks - Todos os direitos reservados</p>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

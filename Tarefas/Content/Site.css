@@ -1,16 +1,8 @@
-﻿* {
-    margin: auto;
-}
-
-body {
-    padding-top: 10px;
-}
-
+﻿
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 30px;
     padding-bottom: 30px !important;
 }
 
@@ -36,13 +28,23 @@ textarea {
 .menu-widgets {
     text-align: center;
     position: relative;
+    color: white;
 }
 
-.white-menu {
-    background: #ebebeb;
+.purple-menu {
+    background: #a66aff;
     padding: 25px;
     margin-bottom: 30px;
     border-radius: 10px;
+}
+
+@media (min-width: 576px) {
+    .input-group-div {
+        padding: 1.5rem;
+        margin-right: 0;
+        margin-left: 0;
+        border-width: .2rem;
+    }
 }
 
 a {
@@ -53,3 +55,24 @@ a {
         color: black;
         text-decoration: none;
     }
+
+
+.btn-outline-roxo {
+    color: rebeccapurple !important;
+    border-color: rebeccapurple !important;
+}
+
+    .btn-outline-roxo:hover {
+        background-color: #a66aff;
+        color: white !important;
+    }
+
+
+.load {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    color: blue;
+}
