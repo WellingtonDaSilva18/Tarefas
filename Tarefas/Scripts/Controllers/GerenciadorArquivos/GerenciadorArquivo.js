@@ -127,9 +127,11 @@ function MostrarTexto(btn) {
 
     $("#textoaqui").empty();
 
+    //Pega o texto do pdf
     var texto = btn.parentElement.parentElement.lastElementChild.innerHTML;
 
     $("#textoaqui").append(texto);
+
     $("#modal-text").modal();
 
 }
