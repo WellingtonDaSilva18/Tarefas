@@ -139,7 +139,10 @@ namespace Tarefas.Controllers
                     //    {
                     //        //Adiciona o texto que extraiu do pdf
                     //        texto.Append(PdfTextExtractor.GetTextFromPage(leitor, i));
+
+                    //        string[] teste = texto.ToString().Split('\n');
                     //    }
+                    //}
                     #endregion
 
                     // instantiate a pdf to text converter object
@@ -177,7 +180,6 @@ namespace Tarefas.Controllers
                     }
 
                 }
-
                 return arquivos;
             }
             catch (Exception ex)
